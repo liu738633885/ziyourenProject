@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--http环境  1.线上 2.测试-->
+    <integer name="HTTP_CONFIG">1</integer>
+    <!--蒲公英lewis-->
+    <!--<string name="PGYER_APPID">"836662447ff4d857ef1063384c4d3166"</string>-->
+    <!--蒲公英赵鸿鑫-->
+    <string name="PGYER_APPID">"4499b5f8f2d40c9287b586b78fdb6171"</string>
+
+    <!--环信正式-->
+    <string name="EASEMOB_APPKEY">1118160926178687#ziyouren</string>
+    <!--环信测试-->
+    <!--<string name="EASEMOB_APPKEY">1118160926178687#ziyourentest</string>-->
+
+
+   <!-- <string name="BAIDU_API_KEY">bOEguiKbGDCRi7WXWPwDhENqvxHawOli</string>-->
+    <string name="BAIDU_API_KEY">0Zc1mAcKQm44flUSlFKK3t8OP9jcui3e</string>
+
+
+    <!--微信-->
+    <string name="WX_APPID">wxe51b8bd386e7ae8d</string>
+</resources>

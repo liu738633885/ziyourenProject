@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#e5e5e5">
+
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:src="@drawable/icon_back_black"/>
+
+    <EditText
+        android:id="@+id/searchkey"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_bg_search"
+        android:hint="搜索"
+        android:paddingLeft="40dp"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:textSize="@dimen/midTextSize"/>
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/icon_search_black"
+        android:translationX="-20dp"/>
+
+</RelativeLayout>
+

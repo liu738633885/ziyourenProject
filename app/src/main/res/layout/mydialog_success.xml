@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/shape_bg_corners8dp_white"
+              android:layout_width="240dp"
+              android:gravity="center_horizontal"
+              android:padding="10dp"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="37dp"
+        android:src="@mipmap/icon_success"
+        android:layout_height="37dp"/>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="成功"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/super_green_02"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

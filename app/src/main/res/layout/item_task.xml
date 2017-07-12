@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="12dp"
+             android:layout_marginRight="12dp">
+<!--android:foreground="?android:attr/selectableItemBackground"-->
+
+   <!-- <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:clickable="true"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="8dp"
+        >-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/shape_bg_corners8dp_white"
+            >
+
+            <ImageView
+                android:id="@+id/imv_avatar"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:src="@mipmap/default_user_icon"/>
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imv_avatar"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:text="姓名"
+                android:textColor="#222"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_school_isstudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_nickname"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/imv_avatar"
+                android:maxLines="1"
+                android:text="学校  状态"
+                android:textColor="#666"
+                android:textSize="10sp"/>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_below="@id/imv_avatar"
+                android:layout_marginTop="5dp"
+                android:background="@color/line_01"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line1"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="标题"
+                android:textColor="#222"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:text="内容"
+                android:textColor="#666"
+                android:textSize="11sp"/>
+
+           <!-- <HorizontalScrollView
+                android:scrollbars="none"
+                android:id="@+id/sv_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content"
+                >-->
+
+                <LinearLayout
+                    android:layout_below="@id/tv_content"
+                    android:id="@+id/layout_pic"
+                    android:layout_marginBottom="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                </LinearLayout>
+
+            <!--</HorizontalScrollView>-->
+
+            <LinearLayout
+                android:id="@+id/ll_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_pic"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥ 2元"
+                    android:textSize="10sp"
+                    android:textColor="@color/super_red"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@mipmap/icon_gps2_green"/>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="所在地"
+                    android:textColor="#666"
+                    android:textSize="10sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@mipmap/icon_gps3_green"/>
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="3.4km"
+                    android:textColor="#666"
+                    android:textSize="10sp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@mipmap/icon_time"/>
+
+                <TextView
+                    android:id="@+id/tv_create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="今天"
+                    android:textColor="#666"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_below="@id/ll_info"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/line_01"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line2"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标签:"
+                    android:textColor="#222"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_grab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:background="@drawable/shape_bg_circular_only_stroke_red"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="2dp"
+                    android:text="新发布"
+                    android:textColor="@color/super_red"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_people_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_bg_circular_only_stroke_green"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="2dp"
+                    android:text="单人"
+                    android:textColor="@color/super_green"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_classname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_bg_circular_only_stroke_green"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="2dp"
+                    android:text="跑腿"
+                    android:textColor="@color/super_green"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_member_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_bg_circular_only_stroke_pink"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="2dp"
+                    android:text="女生"
+                    android:textColor="@color/super_pink"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+    <!--</android.support.v7.widget.CardView>-->
+    <ImageView
+        android:id="@+id/imv_tag"
+        android:layout_width="78dp"
+        android:layout_height="26dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="12dp"
+        android:src="@mipmap/icon_tag02"/>
+
+
+</FrameLayout>

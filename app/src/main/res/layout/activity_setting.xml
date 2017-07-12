@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    >
+
+    <com.huaqie.wubingjie.widgets.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        app:center_text="设置"
+        app:mode="0"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.huaqie.wubingjie.widgets.ChooseLayout
+                android:id="@+id/cl_userinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:ChooseLayout_tv_text="个人信息"/>
+
+            <com.huaqie.wubingjie.widgets.ChooseLayout
+                android:id="@+id/cl_zhanghu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ChooseLayout_tv_text="账户与安全"/>
+
+            <com.huaqie.wubingjie.widgets.ChooseLayout
+                android:id="@+id/cl_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ChooseLayout_tv_text="意见反馈"/>
+
+            <com.huaqie.wubingjie.widgets.ChooseLayout
+                android:id="@+id/cl_clean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ChooseLayout_mode="1"
+                app:ChooseLayout_tv_text="清除缓存"/>
+            <com.huaqie.wubingjie.widgets.ChooseLayout
+                android:id="@+id/cl_updata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:ChooseLayout_mode="1"
+                app:ChooseLayout_tv_text="当前版本"/>
+
+
+            <com.huaqie.wubingjie.widgets.ChooseLayout
+                android:id="@+id/cl_clean_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ChooseLayout_mode="1"
+                app:ChooseLayout_tv_text="恢复设置"/>
+
+            <com.huaqie.wubingjie.widgets.ChooseLayout
+                android:id="@+id/cl_xieyi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ChooseLayout_tv_text="用户协议"/>
+
+            <com.huaqie.wubingjie.widgets.ChooseLayout
+                android:id="@+id/cl_appinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ChooseLayout_tv_text="关于自由人"/>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:stateListAnimator="@null"
+                android:text=" 退出登录"
+                android:textColor="@color/super_red"
+                android:textSize="@dimen/largeTextSize"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huaqie.wubingjie.activity.WelcomeActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dim_foreground_disabled_material_dark"
+        android:transitionName="pager"/>
+
+    <RadioGroup
+        android:id="@+id/circles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:orientation="horizontal">
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_welcome_button_bg"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:paddingBottom="13dp"
+        android:paddingLeft="29dp"
+        android:paddingRight="29dp"
+        android:paddingTop="13dp"
+        android:scaleType="centerCrop"
+        android:text="立即体验"
+        android:textColor="#4ef9ec"
+        android:textSize="17sp"
+        android:visibility="gone"/>
+</RelativeLayout>

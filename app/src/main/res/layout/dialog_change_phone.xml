@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray01"
+              android:orientation="vertical"
+              android:paddingBottom="20dp">
+
+    <com.huaqie.wubingjie.widgets.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_text="更改手机号"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="请输入你需要修改的新手机号"
+        android:textColor="@color/gray09"
+        android:textSize="12sp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="新手机号"
+            android:textColor="@color/black1"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/edt1"
+            style="@style/MyEditTextColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textColor="@color/gray09"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/line_02"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="验证码"
+            android:textColor="@color/black1"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/edt2"
+            style="@style/MyEditTextColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="10dp"
+            android:textColor="@color/gray09"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/btn_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:background="@drawable/shape_bg_circular_green"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_button_bg_green"
+        android:padding="10dp"
+        android:text="确认更改"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+</LinearLayout>

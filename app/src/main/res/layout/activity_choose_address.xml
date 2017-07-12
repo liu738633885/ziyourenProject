@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_choose_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huaqie.wubingjie.task.ChooseAddressActivity">
+
+    <com.huaqie.wubingjie.widgets.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_text="选择地址"
+        app:mode="3"
+        app:right_text="确认"/>
+
+    <LinearLayout
+        android:id="@+id/ll_choose_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="选择地址:"
+            android:textColor="@color/gray09"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="点击搜索"
+            android:textColor="@color/black02"
+            android:textSize="14sp"/>
+
+        <!-- <EditText
+             android:enabled="false"
+             android:id="@+id/edt_address"
+             style="@style/MyEditTextColor"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="20dp"
+             android:layout_weight="1"
+             android:maxLines="1"
+             android:textSize="15sp"/>
+ -->
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">自由人</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+
+    <string-array name="filter_peoplenum">
+        <item>不限</item>
+        <item>单人</item>
+        <item>多人</item>
+    </string-array>
+    <string-array name="filter_sex">
+        <item>不限</item>
+        <item>男生</item>
+        <item>女生</item>
+    </string-array>
+    <string-array name="filter_type">
+        <item>不限</item>
+        <item>提供服务</item>
+        <item>需要帮助</item>
+    </string-array>
+</resources>

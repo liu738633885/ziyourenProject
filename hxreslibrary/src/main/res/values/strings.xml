@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">HXresLibrary</string>
+    <!-- 自定义部分 -->
+    <string name="attach_check_in">Check in</string>
+    <string name="attach_start_check_in">Start check in</string>
+    <string name="attach_lucky_money">Lucky money</string>
+    <string name="attach_guide">Guide</string>
+    <string name="attach_schedule">Schedule</string>
+    <string name="attach_shake">Shake</string>
+    <string name="attach_call_leader">Call leader</string>
+    <string name="attach_share_location">head car nav</string>
+    <string name="click_to_check_in">Click to check in</string>
+    <string name="click_to_see_check_in_list">Click to see list</string>
+    <string name="being_draw">Being draw</string>
+    <string name="check_in">[check in]</string>
+    <string name="lucky_money">[lucky money]</string>
+    <string name="check_list">Check list</string>
+    <string name="do_not_get_leader_id">Can not get leader</string>
+    <string name="faild_to_check_in">faild to check in</string>
+    <string name="Failed_to_get_activity_information">Failed to get activity information</string>
+    <string name="activity_list">Activity list</string>
+    <string name="group_photo">Group photo</string>
+    <string name="group_qrcode">Group qrcode</string>
+    <string name="call_guide">Call guider</string>
+    <string name="sending_lucky_money">Sending lucky money...</string>
+    <string name="pay_success">支付成功！</string>
+    <string name="pay_cancel">取消支付！</string>
+    <string name="share_success">分享成功！</string>
+    <string name="share_cancel">取消分享！</string>
+    <string name="sharing">正在分享...</string>
+    <string name="pay_fail">支付失败</string>
+    <string name="exit">退出</string>
+    <string name="UMIgnore"></string>
+    <string name="yuan">元</string>
+    <string name="amount">总金额</string>
+    <string name="write_the_amount">填写金额</string>
+    <string name="write_number">填写个数</string>
+    <string name="app_back">返回</string>
+    <string name="app_ok">确定</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_continue">继续</string>
+    <string name="app_tip">提示</string>
+    <string name="app_send">发送</string>
+    <string name="app_set">设置</string>
+    <string name="app_save">保存</string>
+    <string name="app_delete">删除</string>
+    <string name="app_nextstep">下一步</string>
+    <string name="app_prevstep">上一步</string>
+    <string name="app_finish">完成</string>
+    <string name="app_find">查找</string>
+    <string name="app_edit">编辑</string>
+    <string name="app_share">分享</string>
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <!-- 个推 -->
+    <string name="hello">个推开放平台Sdk演示程序</string>
+    <string name="up">绑定sdk</string>
+    <string name="down">解绑sdk</string>
+    <string name="no_clientid">(none)</string>
+    <string name="start">启动</string>
+    <string name="stop">停止</string>
+    <string name="clear">清除日志</string>
+    <string name="enablelog">开启debug日志</string>
+    <string name="bindcell">绑定手机号</string>
+    <string name="pmsg">透传测试</string>
+    <string name="psmsg">通知栏测试</string>
+    <string name="begin">开始(h)</string>
+    <string name="end">结束</string>
+    <string name="duration">持续时间(h)</string>
+    <string name="set_heartbeat">心跳间隔(s)</string>
+    <string name="send_msg">发送消息</string>
+    <string name="bind_alias">绑定别名</string>
+    <string name="unbind_alias">解除别名绑定</string>
+    <!-- updata -->
+    <string name="newUpdateAvailable">发现新版本</string>
+    <string name="dialogPositiveButton">立即下载</string>
+    <string name="dialogNegativeButton">以后再说</string>
+    <string name="app_no_new_update">没有发现新版本</string>
+    <string name="download_progress">正在下载:%1$d%%</string>
+    <string name="download_success">下载完成，点击安装</string>
+
+    <!-- 二维码 -->
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="Is_sending_rep">正在提交订单...</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

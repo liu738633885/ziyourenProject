@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_serve_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huaqie.wubingjie.task.EditServeTaskActivity">
+
+    <com.huaqie.wubingjie.widgets.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_text="发布任务"/>
+
+    <HorizontalScrollView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/rg_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/line_01"
+        />
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/bg_gray01"
+            />
+
+        <EditText
+            android:id="@+id/edt_title"
+            style="@style/MyEditTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="标题"
+            android:maxLength="20"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/line_01"
+            />
+
+
+        <EditText
+            android:id="@+id/edt_content"
+            style="@style/MyEditTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:maxLength="300"
+            android:gravity="left"
+            android:hint="请输入对任务的描述(最大300字,最多7行)"
+            android:minHeight="100dp"
+            android:textSize="15sp"/>
+
+        <com.huaqie.wubingjie.widgets.MultiImageView2
+            android:id="@+id/miv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/bg_gray01"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_child_class"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/tv_child_class"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择"
+                android:textColor="@color/black02"
+                android:textSize="15sp"/>
+            <com.lewis.widgets.MultiLineRadioGroup
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_child_class"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/mrg_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:child_layout="@layout/item_filter_checkbox"
+                app:child_margin_horizontal="10dp"
+                app:child_margin_vertical="10dp"
+                app:gravity="1"
+                app:single_choice="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line_01"
+                />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_type"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="功能"
+                android:textColor="@color/black02"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_type2"
+                style="@style/MyRadioButton2"
+                android:text="需要帮助"/>
+
+            <RadioButton
+                android:id="@+id/rb_type1"
+                style="@style/MyRadioButton2"
+                android:text="提供服务"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/line_01"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_people_type"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类型"
+                android:textColor="@color/black02"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_people_type1"
+                style="@style/MyRadioButton2"
+                android:text="单人"/>
+
+            <RadioButton
+                android:id="@+id/rb_people_type2"
+                style="@style/MyRadioButton2"
+                android:text="多人"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/line_01"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别"
+                android:textColor="@color/black02"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_sex_0"
+                style="@style/MyRadioButton2"
+                android:text="男女不限"/>
+            <RadioButton
+                android:id="@+id/rb_sex_1"
+                style="@style/MyRadioButton2"
+                android:text="男"/>
+
+            <RadioButton
+                android:id="@+id/rb_sex_2"
+                style="@style/MyRadioButton2"
+                android:text="女"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/line_01"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地点"
+                android:textColor="@color/black02"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_marginLeft="30dp"
+                android:text="任务地址"
+                android:ellipsize="end"
+                android:textColor="@color/gray09"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/line_01"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                android:textColor="@color/black02"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_finish_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:layout_marginLeft="30dp"
+                android:text="任务的有效时间"
+                android:textColor="@color/gray09"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/line_01"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="人数"
+                        android:textColor="@color/black02"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/edt_people_num"
+                        style="@style/MyEditTextColor"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:maxLength="5"
+                        android:hint="任务的人数"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/line_01"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="薪酬"
+                        android:textColor="@color/black02"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/edt_price"
+                        style="@style/MyEditTextColor"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:hint="单人不少于0.5元"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/line_01"
+                />
+
+            <TextView
+                android:id="@+id/tv_all_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="合计:0.00"
+                android:textColor="@color/super_green"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@color/bg_gray01"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码"
+                android:textColor="@color/black02"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/edt_phone"
+                style="@style/MyEditTextColor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:hint="手机号码"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray01"
+            android:paddingBottom="13dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="5dp"
+            android:text="温馨提示,该手机号只有接收人可见"
+            android:textColor="@color/gray09"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/line_01"
+            />
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_margin="11dp"
+            android:background="@drawable/selector_button_bg_green"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huaqie.wubingjie.task.PayActivity">
+
+    <com.huaqie.wubingjie.widgets.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_text="支付方式"/>
+
+    <RadioButton
+        android:id="@+id/rb1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_rb_button_green"
+        android:button="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="微信"
+        android:textColor="@color/black1"
+        android:textSize="16sp"/>
+
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_rb_button_green"
+        android:button="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="支付宝"
+        android:textColor="@color/black1"
+        android:textSize="16sp"/>
+
+    <RadioButton
+        android:id="@+id/rb3"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_rb_button_green"
+        android:button="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="钱包"
+        android:textColor="@color/black1"
+        android:textSize="16sp"/>
+
+
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_button_bg_green"
+        android:text="付款"
+        android:textColor="@color/white"/>
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="25dp"
+        android:text="@string/pay_info"
+        android:textColor="#666"
+        android:textSize="12sp"/>
+    <!-- android:text="温馨提示:支付金额由自由人暂时保管, 如有: 取消任务,全额返还"-->
+
+
+</RadioGroup>

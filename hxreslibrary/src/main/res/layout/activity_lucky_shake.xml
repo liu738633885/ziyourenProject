@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eee"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/ainana_title"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/ease_commom_back_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发起摇一摇"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text="奖品个数"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/lucky_money_num"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center_vertical|end"
+            android:hint="填写个数"
+            android:inputType="number"
+            android:minWidth="60dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/ainana_green"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="个"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="中奖概率"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/lucky_money_money"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:hint="建议5"
+            android:inputType="number"
+            android:minWidth="60dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/ainana_green"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="%"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/lucky_money_button"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/red"
+            android:text="发起"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

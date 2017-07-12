@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/super_green</color>
+    <color name="colorPrimaryDark">@color/bg_black01</color>
+    <color name="colorAccent">@color/super_green</color>
+    <color name="colorPrimaryLight">@color/super_green_light</color>
+
+    <!--自己的-->
+    <color name="bg_black01">#3a3c3f</color>
+    <color name="bg_black02">#353538</color>
+    <color name="bg_gray01">#eaeaea</color>
+    <color name="line_black">#343639</color>
+    <color name="line_white">#45474a</color>
+    <color name="line_01">#e5e5e5</color>
+    <color name="line_02">#e0e0e0</color>
+    <color name="super_red">#ff3833</color>
+    <color name="super_pink">#ff9cd7</color>
+    <color name="super_green_light">#a82bb9aa</color>
+    <color name="super_green">#18a9a1</color>
+    <color name="super_green_dark">#239f92</color>
+    <color name="super_orange">#FD892A</color>
+    <color name="super_green_02">#2dfc73</color>
+    <color name="gray09">#999999</color>
+    <color name="gray06">#666666</color>
+    <color name="black02">#222222</color>
+
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffffff</color>
+
+
+    <!--主标题的黑色-->
+    <color name="black1">#1e1e1e</color>
+    <color name="black2">#3d3d3d</color>
+    <!--副标题-->
+    <color name="gray01">#797979</color>
+    <color name="gray03">#7f7f7f</color>
+    <!--主要用于提示性文字-->
+    <color name="gray02">#8a8a8a</color>
+    <color name="super_gray">#9f9f9f</color>
+    <color name="super_gray2">#474747</color>
+    <color name="super_gray3">#d7d7d7</color>
+
+    <color name="super_red2">#ff0000</color>
+    <color name="super_red3">#ed3f3c</color>
+    <!--loading 颜色-->
+    <color name="loading">#e2e2e2</color>
+    <!--背景色-->
+    <color name="bg_gray">#f1f1f1</color>
+    <color name="line1">#f1f1f1</color>
+    <color name="line2">#d2d2d2</color>
+
+    <color name="zhezhao">#24000000</color>
+    <color name="super_orange2">#ec6941</color>
+    <color name="super_orange3">#ff5000</color>
+
+    <color name="super_green_03">#2bb8aa</color>
+    <color name="super_blue">#30a5ff</color>
+
+
+    <color name="color_8290AF">#4c6386</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="name_selector_color">#cccccc</color>
+    <color name="transparent">#00000000</color>
+    <color name="bg_no_photo">#EEEEEE</color>
+    <color name="title_bg">#373B3E</color>
+    <color name="video_bg">#ededed</color>
+
+
+</resources>

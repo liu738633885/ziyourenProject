@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.huaqie.wubingjie">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.read_external_storage"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- nohttp -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 拍照 -->
+    <permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 读取通讯录 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!-- GalleryFinal -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 百度地图 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- 二维码 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 环信 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 反馈 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 可选 -->
+        <activity android:name="com.pgyersdk.activity.FeedbackActivity"/>
+        <!-- 必选 -->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="@string/PGYER_APPID"/>
+        <!-- 百度 key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="@string/BAIDU_API_KEY"/>
+        <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2">
+                </action>
+            </intent-filter>
+        </service>
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="@string/EASEMOB_APPKEY"/>
+        <!-- 图片选择 activity -->
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <activity
+            android:name=".activity.ImagePagerActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+
+        <!-- ==========环信=========== -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.GroupsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 群组详情 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.GroupDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 转发消息用户列表页面 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.ForwardMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 大图显示 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 视频选择 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.ImageGridActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 视频录制 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.RecorderVideoActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 视频播放 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowVideoActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 添加好友 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.AddContactActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <!-- 新的朋友邀请消息页面 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.NewFriendsMsgActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 聊天页面 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <!-- 选择@的人 -->
+        <activity android:name="com.hyphenate.chatuidemo.ui.PickAtUserActivity"/>
+        <!-- 长按弹出菜单 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.ContextMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle"/>
+        <!-- 地图 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.EaseBaiduMapActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 群组黑名单用户列表 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.GroupBlacklistActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 退出群组提示框 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.ExitGroupDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom"/>
+        <!-- 群组选人 -->
+        <activity
+            android:name="com.hyphenate.chatuidemo.ui.GroupPickContactsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- ==========环信结束=========== -->
+        <!-- ==========app 业务========== -->
+        <activity android:name=".activity.MainActivity">
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/Welcome">
+        </activity>
+        <activity android:name=".city.HomeCityActivity"/>
+        <activity android:name=".activity.ForgetPasswordActivity">
+        </activity>
+        <activity android:name=".activity.RegisterActivity">
+        </activity>
+        <activity android:name=".chat.MessageActivity">
+        </activity>
+        <activity android:name=".home.ChooseFilterActivity">
+        </activity>
+        <activity android:name=".task.ServeTaskDetailActivity">
+        </activity>
+        <activity android:name=".activity.FinishActivity">
+        </activity>
+        <activity android:name=".setting.MyUserInfoActivity">
+        </activity>
+        <activity android:name=".setting.SettingActivity">
+        </activity>
+        <activity android:name=".setting.FeedbackActivity">
+        </activity>
+        <activity android:name=".setting.AccountSecurityActivity">
+        </activity>
+        <activity android:name=".order.MyOrderActivity">
+        </activity>
+        <activity android:name=".task.EditServeTaskActivity">
+        </activity>
+        <activity android:name=".task.PayActivity">
+        </activity>
+        <activity android:name=".task.ChooseAddressActivity">
+        </activity>
+        <activity android:name=".activity.ComplainActivity">
+        </activity>
+        <activity android:name=".activity.CancelServeTaskActivity">
+        </activity>
+        <!-- ==========app 业务结束========== -->
+        <activity android:name=".mine.AccountActivity">
+        </activity>
+        <activity android:name=".mine.DepositActivity">
+        </activity>
+        <activity android:name=".notice.NoticeListActivity">
+        </activity>
+        <activity android:name=".notice.NoticeDetailActivity">
+        </activity>
+        <activity android:name=".order.MyServeTaskActivity">
+        </activity>
+        <activity android:name=".chat.NewFriendActivity">
+        </activity>
+        <activity android:name=".setting.UserInfoActivity">
+        </activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/AppSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:theme="@style/Welcome">
+        </activity>
+        <activity android:name=".activity.WebViewActivity"/>
+        <activity android:name=".mine.CheckCardActivity">
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoDisplay"/>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:name=".activity.MapActivity">
+        </activity>
+        <activity android:name=".task.ServeTaskDetailActivity2">
+        </activity>
+        <activity android:name=".activity.PermissionsActivity">
+        </activity>
+        <activity android:name=".task.PastTaskActivity">
+        </activity>
+    </application>
+
+</manifest>

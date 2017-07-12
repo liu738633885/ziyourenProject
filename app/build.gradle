@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.huaqie.wubingjie"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 2016112502
+        versionName "2.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    signingConfigs {
+
+        release {
+            storeFile file(RELEASE_STOREFILE)
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+    }
+    buildTypes {
+        debug {
+            //移除无用的resource文件
+            shrinkResources false
+            //Zipalign优化
+            zipAlignEnabled true
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+        release {
+            //移除无用的resource文件
+            shrinkResources false
+            //Zipalign优化
+            zipAlignEnabled true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    //json
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.alibaba:fastjson:1.2.12'
+    //http
+    compile 'com.yolanda.nohttp:nohttp:1.0.2'
+    //Utils
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.upyun:upyun-android-sdk:1.0.2'
+    //view
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.9.7'
+    compile 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'
+    compile 'com.bm.photoview:library:1.4.1'
+    //拍照
+    compile 'me.iwf.photopicker:PhotoPicker:0.8.1@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.soundcloud.android:android-crop:1.0.1@aar'
+    //测试及反馈
+    compile 'com.pgyersdk:sdk:2.4.2'
+    compile project(':hxreslibrary')
+    compile project(':ainanalibrary')
+    compile 'com.android.support.test.espresso:espresso-core:2.2.2'
+}

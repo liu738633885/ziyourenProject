@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyRadioButton">
+
+        <attr name="mydrawableSize" format="dimension"/>
+        <attr name="mydrawableTop" format="reference"/>
+        <attr name="mydrawableLeft" format="reference"/>
+        <attr name="mydrawableRight" format="reference"/>
+        <attr name="mydrawableBottom" format="reference"/>
+
+    </declare-styleable>
+    <declare-styleable name="TitleBar">
+        <attr name="mode" format="integer"/>
+        <attr name="left_text" format="string"/>
+        <attr name="left_img" format="reference"/>
+        <attr name="center_text" format="string"/>
+        <attr name="right_text" format="string"/>
+        <attr name="right_img" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ChooseLayout">
+        <attr name="ChooseLayout_mode" format="integer"/>
+        <attr name="ChooseLayout_tv_text" format="string"/>
+        <attr name="ChooseLayout_tv_text2" format="string"/>
+        <attr name="ChooseLayout_edt_hint" format="string"/>
+        <attr name="ChooseLayout_tv_textColor" format="color"/>
+        <attr name="ChooseLayout_bottomlineColor" format="color"/>
+        <attr name="ChooseLayout_textSize" format="dimension"/>
+        <attr name="ChooseLayout_right_img" format="reference"/>
+
+    </declare-styleable>
+    <declare-styleable name="RatioImageView">
+
+        <!-- 宽度是否根据src图片的比例来测量（高度已知） -->
+        <attr name="is_width_fix_drawable_size_ratio" format="boolean" />
+        <!-- 高度是否根据src图片的比例来测量（宽度已知） -->
+        <attr name="is_height_fix_drawable_size_ratio" format="boolean" />
+        <!--当mIsWidthFitDrawableSizeRatio生效时，最大宽度-->
+        <attr name="max_width_when_width_fix_drawable" format="dimension" />
+        <!--当mIsHeightFitDrawableSizeRatio生效时-->
+        <attr name="max_height_when_height_fix_drawable" format="dimension" />
+        <!-- 高度设置，参考宽度，如0.5 , 表示 高度＝宽度×０.5 -->
+        <attr name="height_to_width_ratio" format="float" />
+        <!-- 宽度设置，参考高度，如0.5 , 表示 宽度＝高度×０.5 -->
+        <attr name="width_to_height_ratio" format="float" />
+        <!--宽度和高度,避免layout_width/layout_height会在超过屏幕尺寸时特殊处理的情况-->
+        <attr name="ratioImageView_width" format="dimension" />
+        <attr name="ratioImageView_height" format="dimension" />
+    </declare-styleable>
+
+</resources>

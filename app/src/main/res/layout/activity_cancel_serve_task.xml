@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_finish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray01"
+    android:orientation="vertical"
+    tools:context="com.huaqie.wubingjie.activity.CancelServeTaskActivity">
+
+    <com.huaqie.wubingjie.widgets.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_text="取消任务"
+        app:mode="2"
+        app:right_text="发送"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_corners8dp_white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edt"
+                style="@style/MyEditTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:minHeight="82dp"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+    <com.huaqie.wubingjie.widgets.TitleBar
+        android:id="@+id/titlebar"
+        app:center_text="加载中..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

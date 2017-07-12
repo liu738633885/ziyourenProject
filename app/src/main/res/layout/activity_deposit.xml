@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_deposit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray01"
+    android:orientation="vertical"
+    tools:context="com.huaqie.wubingjie.mine.DepositActivity">
+
+    <com.huaqie.wubingjie.widgets.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_text="提现"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_01"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提现金额:     "
+                android:textColor="@color/black02"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/edt_deposit_money"
+                style="@style/MyEditTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:hint="请输入金额"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/line_01"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝账号: "
+                android:textColor="@color/black02"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/edt_deposit_account"
+                style="@style/MyEditTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:hint="请输入账户"
+                android:maxLines="1"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/line_01"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录密码: "
+                android:textColor="@color/black02"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/edt_password"
+                style="@style/MyEditTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:hint="请输入登录密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb_alipay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="支付宝"/>
+
+        <RadioButton
+            android:id="@+id/rb_wechat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="微信"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:text="温馨提示:   本次提现扣除1%手续费,该费用由第三方支付机构扣除"
+        android:textColor="@color/gray09"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/selector_button_bg_green"
+        android:text="确认提现"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+</LinearLayout>

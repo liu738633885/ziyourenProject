@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AinanaLibrary</string>
+    <string name="no_results">没有搜索到匹配的内容</string>
+    <string name="long_text">这是一段长文字这是dasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdas一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字这是一段长文字</string>
+    <string name="no_permission">没有权限</string>
+    <string name="pay_info">温馨提示:为保证服务质量，您的该笔服务金将由自由人平台托管，双方确认任务完成后，我们会为您将服务金转到对方账户，若任务未完成或取消任务，服务金将退回到您的钱包。服务过程中自由人平台不扣除任何费用。</string>
+</resources>
